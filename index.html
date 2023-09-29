@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="header-container container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html">Web<span class="accent">Studio</span></a>
@@ -47,16 +47,25 @@
             </li>
           </ul>
         </address>
+        <button
+          class="header-menu-btn menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero section">
-        <div class="container">
+      <section class="hero section">
+        <div class="hero-wrapper container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="modal-btn" data-modal-open type="button">Order Service</button>
         </div>
-      </section> -->
-      <section class="main-points-section section">
+      </section>
+      <!-- <section class="main-points-section section">
         <div class="container">
           <h2 class="visually-hidden">main points</h2>
           <ul class="main-points-list list">
@@ -113,31 +122,55 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-doing section">
+      <!-- <section class="section-doing section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="card-set list">
             <li class="card-set-item">
-              <img width="360" src="./images/img1.jpg" alt="laptop screen" />
+              <img
+                srcset="./images/doing/img1.jpg 1x, ./images/doing/img1@2x.jpg 2x"
+                src="./images/doing/img1.jpg"
+                alt="laptop screen"
+                loading="lazy"
+                width="360"
+              />
             </li>
             <li class="card-set-item">
-              <img width="360" src="./images/img2.jpg" alt="phone screen" />
+              <img
+                srcset="./images/doing/img2.jpg 1x, ./images/doing/img2@2x.jpg 2x"
+                src="./images/doing/img2.jpg"
+                alt="phone screen"
+                loading="lazy"
+                width="360"
+              />
             </li>
             <li class="card-set-item">
-              <img width="360" src="./images/img3.jpg" alt="phone in hand" />
+              <img
+                srcset="./images/doing/img3.jpg 1x, ./images/doing/img3@2x.jpg 2x"
+                src="./images/doing/img3.jpg"
+                alt="phone in hand"
+                loading="lazy"
+                width="360"
+              />
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-card card-set list">
             <li class="team-member">
-              <img width="264" src="./images/mark.jpg" alt="man" />
+              <img
+                srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
+                src="./images/team/mark.jpg"
+                alt="man"
+                loading="lazy"
+                width="264"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
                 <p class="section-description">Product Designer</p>
@@ -174,7 +207,13 @@
               </div>
             </li>
             <li class="team-member">
-              <img width="264" src="./images/tom.jpg" alt="man" />
+              <img
+                srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
+                src="./images/team/tom.jpg"
+                alt="man"
+                loading="lazy"
+                width="264"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle">Tom Ford</h3>
                 <p class="section-description">Frontend Developer</p>
@@ -211,7 +250,13 @@
               </div>
             </li>
             <li class="team-member">
-              <img width="264" src="./images/camila.jpg" alt="woman" />
+              <img
+                srcset="./images/team/camila.jpg 1x, ./images/team/camila@2x.jpg 2x"
+                src="./images/team/camila.jpg"
+                alt="woman"
+                loading="lazy"
+                width="264"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle">Camila Garcia</h3>
                 <p class="section-description">Marketing</p>
@@ -248,7 +293,13 @@
               </div>
             </li>
             <li class="team-member">
-              <img width="264" src="./images/daniel.jpg" alt="man" />
+              <img
+                srcset="./images/team/daniel.jpg 1x, ./images/team/daniel@2x.jpg 2x"
+                src="./images/team/daniel.jpg"
+                alt="man"
+                loading="lazy"
+                width="264"
+              />
               <div class="team-member-info">
                 <h3 class="section-subtitle">Daniel Wilson</h3>
                 <p class="section-description">UI Designer</p>
@@ -286,8 +337,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="customers section">
+      </section> -->
+      <!-- <section class="customers section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-card card-set list">
@@ -335,7 +386,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- <footer class="page-footer">
       <div class="footer-wrap container">
@@ -404,7 +455,7 @@
         </div>
       </div>
     </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" data-modal-close type="button">
           <svg class="bnt-close" width="8" height="8">
@@ -475,7 +526,78 @@
           <button class="btn-send btn-send-accent" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-btn-close menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link current" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-icons-list">
+        <li class="mobile-socials">
+          <a class="mobile-socials-link" href="">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials">
+          <a class="mobile-socials-link" href="">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials">
+          <a class="mobile-socials-link" href="">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials">
+          <a class="mobile-socials-link" href="">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
