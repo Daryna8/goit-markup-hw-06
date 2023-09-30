@@ -766,7 +766,7 @@ button {
   |============================
 */
 
-@media only screen and (max-width: 1167px) {
+@media only screen and (max-width: 1157px) {
   .section-doing {
     display: none;
   }
@@ -916,7 +916,7 @@ button {
   padding: 97px 0;
   background-color: var(--NAVY-BLUE);
   display: flex;
-  width: 428px;
+  min-width: 320px;
 }
 @media only screen and (min-width: 768px) {
   .page-footer {
@@ -1108,11 +1108,11 @@ button {
   outline: none;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .subscription-input {
     width: 398px;
   }
-}
+} */
 
 .subscription-input::placeholder {
   color: var(--SECONDARY-COLOR);
