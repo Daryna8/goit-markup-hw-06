@@ -933,14 +933,15 @@ button {
 
 .footer-wrap {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
 }
-/* 
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
   .footer-wrap {
     flex-basis: calc(
-    (100% - var(--indent-col) * (var(--item-customer-card) - 1)) / var(--item-customer-card)
-  );
+      (100% - var(--indent-col) * (var(--item-customer-card) - 1)) / var(--item-customer-card)
+    );
   }
 } */
 
@@ -953,6 +954,7 @@ button {
 
 .footer-logo-wrap {
   text-align: center;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -963,7 +965,7 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .footer-logo-wrap {
-    margin-right: 120px;
+    text-align: left;
   }
 }
 
@@ -1008,31 +1010,11 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .footer-description {
-    /* margin-right: 120px; */
     margin-bottom: 0;
   }
 }
 
-.footer-social-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-social-container {
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .footer-social-container {
-    /* margin-right: 80px; */
-  }
-}
-
 .social-media-info {
-  /* margin-right: auto; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1044,7 +1026,6 @@ button {
 .footer-social-media {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   gap: 16px;
   margin-bottom: 72px;
@@ -1076,6 +1057,12 @@ button {
   background-color: #31d0aa;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-subscription {
+    margin-left: 38px;
+  }
+}
+
 .subscription-title {
   color: var(--WHITE);
   font-size: 16px;
@@ -1088,6 +1075,22 @@ button {
 .subscription {
   display: flex;
   gap: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .subscription {
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscription-title {
+    text-align: center;
+  }
+  .footer-social-media {
+    justify-content: center;
+  }
+  .social-media-info {
+    text-align: center;
+  }
 }
 
 .subscription-input {
@@ -1105,17 +1108,15 @@ button {
   outline: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .subscription-input {
+    width: 398px;
+  }
+}
+
 .subscription-input::placeholder {
   color: var(--SECONDARY-COLOR);
 }
-
-/* .title-subscribe {
-  color: var(--WHITE);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
 
 .bnt-subscribe {
   display: flex;
