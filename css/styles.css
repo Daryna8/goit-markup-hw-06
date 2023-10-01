@@ -929,43 +929,38 @@ button {
     min-width: 1158px;
     padding: 100px 0;
   }
+  .page-footer div {
+    padding: 0 50px;
+  }
 }
 
 .footer-wrap {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-wrap {
-    flex-basis: calc(
-      (100% - var(--indent-col) * (var(--item-customer-card) - 1)) / var(--item-customer-card)
-    );
+    justify-content: flex-start;
+    margin-left: 108px;
   }
-} */
+}
 
 @media only screen and (min-width: 1158px) {
   .footer-wrap {
-    flex-direction: row;
-    align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 
 .footer-logo-wrap {
   text-align: center;
-  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-logo-wrap {
     text-align: left;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .footer-logo-wrap {
-    text-align: left;
+    margin-right: 24px;
   }
 }
 
@@ -1057,12 +1052,6 @@ button {
   background-color: #31d0aa;
 }
 
-@media only screen and (min-width: 768px) {
-  .footer-subscription {
-    margin-left: 38px;
-  }
-}
-
 .subscription-title {
   color: var(--WHITE);
   font-size: 16px;
@@ -1107,12 +1096,6 @@ button {
   color: var(--SECONDARY-COLOR);
   outline: none;
 }
-
-/* @media only screen and (max-width: 767px) {
-  .subscription-input {
-    width: 398px;
-  }
-} */
 
 .subscription-input::placeholder {
   color: var(--SECONDARY-COLOR);
