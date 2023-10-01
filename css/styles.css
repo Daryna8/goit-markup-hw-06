@@ -981,7 +981,6 @@ button {
   .footer-wrap {
     width: 584px;
     justify-content: flex-start;
-    margin-left: 108px;
   }
 }
 
@@ -1026,6 +1025,7 @@ button {
 }
 
 .footer-description {
+  text-align: left;
   width: 268px;
   color: var(--CLOUD);
   font-size: 16px;
@@ -1122,6 +1122,7 @@ button {
 
 .subscription-input {
   width: 264px;
+
   height: 40px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -1133,6 +1134,12 @@ button {
   letter-spacing: 0.04em;
   color: var(--SECONDARY-COLOR);
   outline: none;
+}
+
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+  .subscription-input {
+    width: 398px;
+  }
 }
 
 .subscription-input::placeholder {
